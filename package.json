@@ -1,14 +1,29 @@
 {
   "name": "note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "An application that can be used to write and save notes.",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Hila Caspi",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
-  }
+    "express": "^4.17.1",
+    "uuid": "^8.3.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcs847/note-taker.git"
+  },
+  "keywords": [
+    "Express.js",
+    "Node.js",
+    "JSON",
+    "backend"
+  ],
+  "bugs": {
+    "url": "https://github.com/hcs847/note-taker/issues"
+  },
+  "homepage": "https://github.com/hcs847/note-taker#readme"
 }
