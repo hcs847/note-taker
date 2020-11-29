@@ -6,9 +6,14 @@
       "id": "66c226ef-825c-4fca-bade-2c2d5607bd1e"
     },
     {
-      "title": "Note taking",
-      "text": "Testing 123",
-      "id": "3d840a96-3a5d-4428-8eaf-2035b211ff68"
+      "title": "Grocery List",
+      "text": "- Bread\n- Eggs\n- Milk",
+      "id": "8d4d8b7a-1b81-493f-bf55-de313497dec1"
+    },
+    {
+      "title": "Reminders",
+      "text": "Take out the trash",
+      "id": "d60b7ec8-60ec-4624-ba85-14ce76660b3e"
     }
   ]
 }

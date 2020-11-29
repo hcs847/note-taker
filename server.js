@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 // set static path
 app.use(express.static(path.join(__dirname, "public")));
-
+//call modules
 app.use("/api", apiRoutes);
 app.use("/", htmlRoutes);
 
