@@ -22,7 +22,6 @@ app.get("/notes", (req, res) => {
 });
 
 app.get("/api/notes", (req, res) => {
-  console.log(notes);
   return res.json(notes);
 });
 
@@ -45,10 +44,20 @@ function createNewNote(body, noteArray) {
 }
 
 app.post("/api/notes", (req, res) => {
-  //   const newNote = req.body;
   createNewNote(req.body, notes);
   res.json(notes);
-  //   console.log(uuid.v4());
+});
+
+function deleteNote(id, notesArray) {
+  const noteToDelete = notesArray.find((note) => note.id === id);
+  const index = notesArray.indexOf(noteToDelete);
+  notesArray.splice(index, 1);
+  fs.writeFileSync(path.join(__dirname, "./db/db.json"), JSON.stringify({ notes: notesArray }, null, 2));
+  return notesArray;
+}
+app.delete("/api/notes/:id", (req, res) => {
+  const result = deleteNote(req.params.id, notes);
+  return res.json(result);
 });
 
 // Listener
